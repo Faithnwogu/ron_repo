@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    list-style: none;
+    text-decoration: none;
+    font-size: 100%;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     line-height: 1.5;
+}
+
+header{
+     display: flex;
+     align-items: center;
+     padding: .4rem;
+     justify-content: space-evenly;
+     background-color: black;
+     position: fixed;
+     width: 100%;
+     z-index: 3;
+
+    
+}
+
+
+nav li{
+     display: inline;
+     padding: 1rem;
+}
+
+nav li a{
+      color: white;
+      text-transform: capitalize;
+     padding: .5rem;
+     font-size: 1.1rem;
+}
+
+nav li a:hover{   
+      border: 3px solid green;
+      border-radius: 30px;
+      
+}
+
+#hero{
+       height: 100vh;
+       background-image: url(images/logo_1@4x.png);
+       background-size: cover;
+       background-position: center;
+}
+
+.hero-cont{
+    position: relative;
+    top: 27rem;
+    text-align: center;
+}
+
+
+.hero-cont a{
+       padding: .5rem;
+       color: white;
+       border: 1px solid green;
+       transition: .7s;
+}
+
+.hero-cont a:hover{
+     background-color: green;
+}
+
+
+/* about */
+
+#about{
+    height: 100vh;
+ 
+}
+
+.about-cont{
+       display: flex; 
+       align-items: center;
+       position: relative;
+       top: 7rem;
+       justify-content: space-evenly;
+}
+
+/* services */
+#service{
+    height: 100vh;
+   
+   
+}
+
+.service-cont{
+     display: flex; 
+    align-items: center;
+    position: relative;
+    top: 7rem;
+    justify-content: space-evenly;
+}
+
+
+
+/* sell */
+#sell{
+    height: 100vh;
+   
+}
+
+.sell-cont{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 7rem;
+    justify-content: space-evenly;
+}
+
+/* media query */
+@media screen and (max-width:700px){
+       header{
+            flex-direction: column;
+       }
+
+
+       nav{
+           display: none;
+       }
+
+       .about-cont{
+           flex-direction: column;
+            padding: 1rem;
+         
+       }
+
+       .service-cont{
+        flex-direction: column;
+        position: relative;
+        top: 17rem;
+        padding: 1rem;
+        
+       }
+
+       .sell-cont{
+          flex-direction: column;
+          position: relative;
+          top: 26rem;
+          padding: 1rem;
+       }
+}
